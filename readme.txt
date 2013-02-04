@@ -1,44 +1,96 @@
-=== WP Missed Schedule Fix Failed Posts ===
-Contributors: sLa
-Donate link: http://lcsn.net/donate/
-Tags: missed, schedule, future, posts, scheduled, fix, wp, cron, job, publish, post, cronjob, single, event, array, unix, time, stamp, wp-cron, 2.6.5, wordpress_wp_missed_schedule
-Stable tag: 2011.0920.2011
+=== √ WP Missed Schedule Fix Failed Future Posts ===
+Contributors: sLaNGjI
+Donate link: http://slangji.wordpress.com/donate/
+Tags: missed,schedule,future,posts,regression,fix,wp,cron,job,publish,WordPress,sLaNGjI
+Stable tag: 2013.0130.2222
 Requires at least: 2.6
-Tested up to: 3.4
-License: GPLv3
-Find missed schedule posts and it republish them correctly. Checking every 5 minutes all posts that match the problem, and fixed 5 items per session.
+Tested up to: 3.8
+License: GPLv2 or later
+&#9733;&#9733;&#9733; Find Missed Schedule Posts that Match this Problem, Every 1 Minute, and it Republish them Correctly Fixed, 5 Items per Session.
 == Description ==
-This plugin fix <code>Missed Schedule</code> Future Posts Cron Job. Find all missed schedule posts, during a failed cron job, and it republish them correctly. Checking every 5 minutes all posts that match the problem, and fixed 5 items per session, one session every 5 minutes, for not use too many resources. All others failed, will be solved on next sessions, until no longer exist missed schedule future posts.
+Try fix Missed Schedule Future Posts Cron Job: checking all that match this problem, every 1 minute, during a failed cron job, and it republish them correctly fixed, 5 items per session for not use too many resources. All others failed, will be solved on next sessions, until no longer exist. (5 failed post every minute, 300 failed posts every hour, 1 session every minute, 60 sessions every hour)
+
+Author Website: [slangji.wordpress.com](http://slangji.wordpress.com/) - Author Repositories: [github.com/sLaNGjI](https://github.com/sLaNGjI)
+
+Find More on [sLaNGjI's Developer Page @ SoftPedia.com](http://webscripts.softpedia.com/author/sLa-1869786722.html) - [Donate](http://slangji.wordpress.com/donate/) - [Contact](http://slangji.wordpress.com/contact/)
+`
+New WP Missed Schedule Features and Updates:
+1. Introducing (a New Idea of sLa ...) 64Bit Security Tag Key.
+2. Add Support for WordPress 3.6+ Coming Soon Release.
+3. Preemptive Support WordPress 3.7+ ~ 3.8+ Future Releases.
+`
+Scheduled Posts Regression <a href="http://core.trac.wordpress.org/ticket/22944" title="WordPress 3.5 Scheduled Posts Regression Ticket #22944">#22944</a> fixed on WP 3.5.1 is not related to this plugin.
+
+This plugin try fix <code>Missed Schedule</code> Future Posts Cron Job: find all missed schedule posts, during a failed cron job, and it republish them correctly. Checking every 1 minute all posts that match the problem, and fixed 5 items per session, (5 failed future post every minute, 300 failed future posts every hour) one session every 1 minute, (60 sessions every hour) for not use too many resources. All others failed, will be solved on next sessions, until no longer exist missed schedule future posts.
+
+This plugin not decrase server performaces why it check only [wp_schedule_single_event](http://codex.wordpress.org/Function_Reference/wp_schedule_single_event) and [wp_publish_post](http://codex.wordpress.org/Function_Reference/wp_publish_post) Function Behavior to no waste resources.
 
 For completely automatization of plugin, and no other action from the administrator, try on put it on `/mu-plugin/` directoy, and no other action will be required for activation and operation, starting from WordPress installation.
 
-Supports all WP versions from 2.6 to 3.3, Network Multisite and WPMU 2.6 to 2.9.2. Also it is possible it work on old versions from 2.1 to 2.5.1, and legacy 2.0 branch, but the result is not guaranted. Work with Shared, Dedicated, Cloud and VPS Hosting with high and low resources.
+Full Compatible with WordPress Versions from 2.6+ to 3.5+ add Preemptive Support for Coming Soon 3.6+ and Future 3.7+ ~ 3.8+ Releases. Ready to Single, Network Multisite installations, and old WPMU 2.6+ to 2.9+ (latest is 2.9.2) Multi Users. Also it is possible to work on old versions from 2.1+ to 2.5+ (latest is 2.5.1) and legacy 2.0+ branch, but the result is not guaranted. Run on Shared, Dedicated, Cloud and VPS Hosting, with high and low resources. Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License. Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
 
-* Try also:
- * [WP Admin Bar Removal](http://wordpress.org/extend/plugins/wp-admin-bar-removal/)
- * [WP Overview (lite)](http://wordpress.org/extend/plugins/wp-overview-lite/)
- * [WP Total DeIndexing](http://wordpress.org/extend/plugins/wp-total-deindexing/)
- * [WP IE Enhancer and Modernizer](http://wordpress.org/extend/plugins/wp-ie-enhancer-and-modernizer/)
-
-* Tested and Reviewed by: 
+* Tested and Reviewed by:
+ * [wpmods.com](http://www.wpmods.com/wordpress-missed-schedule-plugin/) Thanks to Kevin Muldoon!
  * [wordpress.stackexchange.com](http://wordpress.stackexchange.com/questions/13673/missed-schedule/)
  * [pertamaxxx.com](http://www.pertamaxxx.com/wordpress/wp-missed-schedule-fix-failed-scheduled-posts-error/)
  * [seomention.com](http://seomention.com/wp-missed-schedule-fix/)
  * [wpjedi.com](http://www.wpjedi.com/wp-missed-schedule-fix-failed-scheduled-posts-error/)
 
+Citations:
 `
-No need to delete anything from disk or VPS when deactivate!
-No need to delete anything from disk space or VPS when deleted!
+I think that this is a great plugin to have installed as every now
+and then WordPress will inevitably miss a post schedule.
+`
+[Kevin Muldoon](http://www.wpmods.com/author/system0/)
+`
+Since there was only a small code, I didn't install the pluging,
+but used the code in my functions-file.
+`
+[Martin Aleksander](http://wordpress.stackexchange.com/users/1463/martin-aleksander)
+`
+This plugin is quite easy to get to work. Just install it
+and you are all set. You won’t have to delete or add anything
+to your code. This plugin takes care of it all.
+`
+[Perta Max](http://www.pertamaxxx.com/kontak-pertamaxxx/)
+
+* [Plugins](http://slangji.wordpress.com/plugins/):
+ * [WP Overview (lite)](http://wordpress.org/extend/plugins/wp-overview-lite/)
+ * [WP Overview (lite) MU](http://wordpress.org/extend/plugins/wp-overview-lite-mu/)
+ * [WP Overview (lite) MS](http://wordpress.org/extend/plugins/wp-overview-lite-ms/)
+ * [WP Missed Schedule](http://wordpress.org/extend/plugins/wp-missed-schedule/)
+ * [WP Admin Bar Removal](http://wordpress.org/extend/plugins/wp-admin-bar-removal/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/Admin-Bar-Removal-completely-disable-73547.html)
+ * [WP Admin Bar Node Removal](http://wordpress.org/extend/plugins/wp-admin-bar-node-removal/)
+ * [WP Toolbar Removal](http://wordpress.org/extend/plugins/wp-toolbar-removal/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/ToolBar-Removal-completely-disable-73548.html)
+ * [WP Toolbar Node Removal](http://wordpress.org/extend/plugins/wp-toolbar-node-removal/)
+ * [Noindex (login) WordPress Deindexing](http://wordpress.org/extend/plugins/wp-login-deindexing/)
+ * [Noindex (total) WordPress Deindexing](http://wordpress.org/extend/plugins/wp-total-deindexing/)
+ * [IE Enhancer and Modernizer](http://wordpress.org/extend/plugins/wp-ie-enhancer-and-modernizer/) Linked and reviewed at [softpedia.com](http://webscripts.softpedia.com/script/Modules/WordPress-Plugins/IE-Enhancer-and-Modernizer-73546.html)
+ * [Memory Load Consumption db size Usage Indicator](http://wordpress.org/extend/plugins/wp-memory-db-indicator/)
+
+* [Themes](http://slangji.wordpress.com/themes/): for more nfo [Contact Me](http://slangji.wordpress.com/contact/)
+ * CLEAN
+ * MINIMAL
+ * SIMPLE
+ * PLAIN TEXT ONLY
+ * HYBRID PLAIN TEXT ONLY
+ * EMPTY
+ * EMPTY CMS FRAMEWORK
+
+Follow Me on [LinkedIn](http://www.linkedin.com/in/slangjis) - [Twitter](https://twitter.com/sLanGjIs) - [Gravatar](http://en.gravatar.com/slangji) - [FaceBook](https://www.facebook.com/sLaNGjI) - [Google+](https://plus.google.com/104369105810975562211) - [FeedBurner](http://feeds.feedburner.com/slangji) - [FriendFeed](http://friendfeed.com/slangjis)
+
+Author URL [sLa](http://wordpress.org/extend/plugins/profile/sla) moved to [sLaNGjI](http://wordpress.org/extend/plugins/profile/slangji) update bookmark!
+`
+No need to delete anything from hosting space when deactivate!
+No need to delete anything from hosting space when deleted!
 No need to delete anything from the database when deactivate!
 No need to delete anything from the database when deleted!
 No need to delete anything from the wp_option when deactivate!
 No need to delete anything from the wp_option when deleted!
 wp_option table is auto cleaned when deactivate or deleted!
 Not need other actions except installing or uninstall it!
-Supports all existing WordPress versions, or almost ...
-Work with Shared, Dedicated, Cloud and VPS Hosting.
-Run on Hosting with high and low resources.
 `
+single, event, array, unix, time, stamp, wordpress_wp_missed_schedule
 == Installation ==
 = For users of single WordPress 2.6+ (via FTP) =
 1. Download WP Missed Schedule from wordpress.org plugin repository.
@@ -78,7 +130,7 @@ Took a look at the Wordpress code and noticed future posts get assigned a cronjo
 Why don't you just look at the database and publish all posts with future status and date in past?
 My plugin WP Missed Shcedule looks for posts with a date in the past that still have `post_status=future`. It will take each `post_ID` and publish [wp_publish_post](http://codex.wordpress.org/Function_Reference/wp_publish_post) it.
 = How to Work? =
-This plugin will check every 5 minutes, if there are posts that match the problem described. <code>'WPMS_DELAY',5</code> To not use too many resources, it fix for 5 items per session, one session every 5 minutes. <code>LIMIT 0,5</code> All others failed will be solved in future sessions, until no longer exist. When you activate this plugin the first 5 "Missed Scheduled Future Posts" are fixed immediately. All others are fixed the next batch. On some case (rare?) are also fixed live. If you have "Missed Scheduled Future Posts" after this plugin is activated, is not one error or bug: wait the next checking. If "Missed Scheduled Future Posts" persist, verify that WordPress installation is clean, or exist conflict with other plugins. N.B. If have active others plugins with the same functions of "WP Missed Schedule" this is on conflict and not work. I suggest to delete or deactivate all others, clean related database options table, and use only "WP Missed Schedule". In the same way "WP Missed Schedule" could create conflicts with other plugins with the same functions. In this case, delete or disable it and only used the others.
+This plugin will check every 1 minute, if there are posts that match the problem described. <code>('WPMS_DELAY' ,1)</code> To not use too many resources, it fix for 5 items per session, one session every 1 minute. <code>LIMIT 0,5</code> All others failed will be solved in future sessions, until no longer exist. When you activate this plugin the first 5 "Missed Scheduled Future Posts" are fixed immediately. All others are fixed the next batch. On some case (rare?) are also fixed live. If you have "Missed Scheduled Future Posts" after this plugin is activated, is not one error or bug: wait the next checking. If "Missed Scheduled Future Posts" persist, verify that WordPress installation is clean, or exist conflict with other plugins. N.B. If have active others plugins with the same functions of "WP Missed Schedule" this is on conflict and not work. I suggest to delete or deactivate all others, clean related database options table, and use only "WP Missed Schedule". In the same way "WP Missed Schedule" could create conflicts with other plugins with the same functions. In this case, delete or disable it and only used the others.
 = Dealing with WordPress "Missed Schedule" =
 If you are scheduling blog posts in WordPress and seeing a "Missed Schedule" message, it's likely caused by an issue with your web server, or it is WordPress that is causing the problem of your blog posts not being posted as scheduled. This is an annoying problem. However, there is a very simple fix that is easy to do. The "Missed Schedule" problem seems to point to the web server and WordPress. The "time/date" comparison needs to match in order for your blog posts to get published as scheduled. If you are currently using the WordPress, blogging platform, you can easily fix the issue by modifying the wp-cron.php file which is located in the root folder. You simply open your notepad editor in Windows and search for the following line of code, which is located towards the bottom on the file wp-cron.php file.
 
@@ -106,19 +158,56 @@ If you’re not familiar with programming, don’t worry, there is a simple solu
    5. Upload both wp-cron.php and cron.php extracted from version 2.6.5 to your web server via FTP client.
 = Conclusion = 
 I hope the fix working fine for you. WordPress should really look into this issue seriously and provide a fix or help to resolve the issue faced by many of the bloggers. If WordPress is not able to publish future post at predefined time, it should recheck it periodically for several time, says every 5/10/15 minutes, and publish the post as soon as possible.
+== Screenshots ==
+[WP Missed Scheduled Screenshots](http://plugins.trac.wordpress.org/browser/wp-missed-schedule/branches/screenshots/)
 == Changelog ==
+= Todo List =
+1. √ Checking: 5 Future Posts for 1 Minute (2013.0130.2222)
+2. √ Realtime Checking: 10 Future Posts for 1 Minutes (2013.0131.3333)
+3. √ Tiket #3712701 [TimeZone Issues](http://wordpress.org/support/topic/publishing-ahead-of-schedule-timezone-issues/) (2013.0131.3333)
+4. User Options Interface Optional (2013.0000.2014) No Date Set!
+5. Tiket #3740220 [Change Frequency](http://wordpress.org/support/topic/change-frequency/) (2013.0000.2014) No Date Set!
+= Development Release =
+[Version 2013 Build 0131-BUGFIX.3333-DEVELOPMENTAL](http://downloads.wordpress.org/plugin/wp-missed-schedule.zip) (new sql way?)
+= Warning Notice =
+`
+WP Missed Schedule 2011.0920.2011 and 2013.0106.1111 Versions
+was silently updated on 2013-01-30.
+Please: re-download and re-install as soon possible! Enjoy :)
+`
+= Disclaimer =
 `
 All previous release, prior of latest stable, are on fact 
 deprecated and no longer supported on this project: 
 is very suggested upgrade to the latest build always!
 `
-= Development Release =
-[Version 2012 Build 0000-BUGFIX.2012-DEVELOPMENTAL](http://downloads.wordpress.org/plugin/wp-missed-schedule.zip) (new mysql way?)
-= 2011.0920.2011 =
-* Major Update [CERTIFIED] WordPress 3.3 and 3.2 / 3.2.1 / 3.2.2 Upgrade.
+= 2013.0130.2222 =
+* Recommended Update [BUGFIX] Fixed (unusual/infrequent) Ticket [#3786523](http://wordpress.org/support/topic/activate-the-plugin-then-show-strange-messages/)
  * Please update as soon possible!
- * NEW Working on WordPress 3.3 and future 3.3.x a.k.a. 3.3+ releases.
- * Full compatible with WordPress 3.2 / 3.2.1 / 3.2.2 a.k.a 3.2+
+ * Full Compatible with WordPress 2.6+ to 3.5+
+ * Preemptive Support for WordPress 3.6+ and 3.7+ ~ 3.8+ Future Releases.
+ * BUGFIX Fixed Ticket [#3786523](http://wordpress.org/support/topic/activate-the-plugin-then-show-strange-messages/) in Some Circumstances Hosting Configurations.
+ * ENHANCEMENT Checking Interval Modified from 5 Minutes to 1 Minute.
+ * UPDATE checking interval every 1 minute (previous 5 minutes) <code>('WPMS_DELAY' ,1)</code>
+ * SECURITY Introducing (a New Idea of sLa ...) 64Bit Security Tag Key.
+ * Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
+ * Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
+ * Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
+ * BUMP Version 2013 Build 0130 Revision 2222
+= 2013.0106.1111 =
+* Silent Update [STABLE] Try WP 3.5 Scheduled Posts Regression Ticket <a href="http://core.trac.wordpress.org/ticket/22944" title="WordPress 3.5 Scheduled Posts Regression Ticket #22944">#22944</a>
+ * Please update as soon possible!
+ * Full Compatible with WordPress 2.6+ to 3.5+
+ * Work under [GPLv2](http://www.gnu.org/licenses/gpl-2.0.html) or later License.
+ * Implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
+ * Meet detailed [Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) quality requirements.
+ * BUMP Version 2013 Build 0106 Revision 1111
+= 2011.0920.2011 =
+* Major Update [CERTIFIED] WP 2.6+ to 3.5+ Single and MultiSite Environment
+ * Please update as soon possible!
+ * Full Compatible with WordPress 2.6+ to 3.5+
+ * Ready to Single and Network Multisite Environment
+ * Work under GPLv2 or later License
  * BUMP Version 2011 Build 0920 Revision 2011
 = 2011.0424.3333 =
 * Silent Update [MAINTENANCE] WP 3.1 and 3.1.1 Upgrade. Fixed slowness.
@@ -138,7 +227,7 @@ is very suggested upgrade to the latest build always!
  * Please update as soon possible!
  * UPGRADE Make it full compatible with WordPress 3.0.5
  * FIXED Some Hosting Crash with Full Strict Security Rules (.htaccess)
- * UPDATE check every 5 minutes (previous 15 minutes) <code>'WPMS_DELAY',5</code>
+ * UPDATE check every 5 minutes (previous 15 minutes) <code>('WPMS_DELAY' ,5)</code>
  * UPDATE Preemptive support for WordPress 3.1-RC4-17441
  * Bump Version 2011 Build 0214 Revision 2222
 = 2011.0107.1111 =
@@ -217,8 +306,12 @@ is very suggested upgrade to the latest build always!
  * Reduce Code Bloat
  * Bump Version 2008 Build 1210 Revision 2008
 == Upgrade Notice ==
+= 2013.0130.2222 =
+* Recommended Update [BUGFIX] Fixed (unusual/infrequent) Ticket #3786523 - Introducing (a New Idea of sLa ...) 64Bit Security Tag Key - Checking Interval Modified from 5 Minutes to 1 Minute.
+= 2013.0106.1111 =
+* Silent Update [STABLE] Try WP 3.5 Scheduled Posts Regression Ticket <a href="http://core.trac.wordpress.org/ticket/22944" title="WordPress 3.5 Scheduled Posts Regression Ticket #22944">#22944</a>
 = 2011.0920.2011 =
-* Major Update [CERTIFIED] WordPress 3.3 / 3.2 / 3.2.1 / 3.2.2 Compatibility Update.
+* Major Update [CERTIFIED] WP 2.6+ to 3.5+ Single and Network MultiSite Environment Update. Work under GPLv2 or later License.
 = 2011.0424.3333 =
 * Silent Update [MAINTENANCE] WP 3.1 and 3.1.1 Upgrade. Now fixed 5 posts in one session. Fixed low resource hosting slowness.
 = 2011.0214.2222 =
@@ -243,37 +336,45 @@ First Public Stable Release (full WP 3.0.1 compatible) Fix Missed Scheduled Futu
 Future Posts (full WP 2.9 compatible) Fix Missed Scheduled.
 = 2008.1210.2008 =
 Fix Future Posts (full WP 2.7 compatible) Failed Missed Scheduled Cron Job.
-== Licensing ==
-* License
- *  This program is free software; you can redistribute it and/or
-    modify it under the terms of the [GNU General Public License](http://wordpress.org/about/gpl/)
-    as published by the Free Software Foundation; either [version 2](http://www.gnu.org/licenses/old-licenses/gpl-2.0.html)
-    of the License, or (at your option) any later version.
- *  This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
- *  You should have received a copy of the GNU General Public License
-    along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
-* Disclaimer
- * The license under which the WordPress software is released is the GPLv2 (or later) from the Free Software Foundation. A copy of the license is included with every copy of WordPress.
- * Part of this license outlines requirements for derivative works, such as plugins or themes. Derivatives of WordPress code inherit the GPL license.
- * There is some legal grey area regarding what is considered a derivative work, but we feel strongly that plugins and themes are derivative work and thus inherit the GPL license.
-* Copyright
- * Part of copyright belongs to sLaT and a portion to their respective owners.
-   Not For Resale or Business Purpose.
-== Links ==
-[Credit Link](http://wordpress.org/extend/plugins/profile/slangji)
-== Screenshot ==
-[Screenshots](http://plugins.trac.wordpress.org/browser/wp-missed-schedule/branches/screenshots/)
-== Support ==
+== License ==
+* This program is free software; you can redistribute it and/or
+modify it under the terms of the [GNU General Public License](http://wordpress.org/about/gpl/)
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+* This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+* You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+
+* The license for this software can be found on [Free Software Foundation](http://www.gnu.org/licenses/gpl-2.0.html) and as license.txt into this plugin package.
+= Disclaimer =
+* The license under which the WordPress software is released is the GPLv2 (or later) from the Free Software Foundation. A copy of the license is included with every copy of WordPress.
+
+* Part of this license outlines requirements for derivative works, such as plugins or themes. Derivatives of WordPress code inherit the GPL license.
+
+* There is some legal grey area regarding what is considered a derivative work, but we feel strongly that plugins and themes are derivative work and thus inherit the GPL license.
+
+* The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
+= Guidelines =
+* This software implement [GNU style](http://www.gnu.org/prep/standards/standards.html) coding standard indentation.
+ 
+* This software meet [Detailed Plugin Guidelines](http://wordpress.org/extend/plugins/about/guidelines/) paragraphs 1,4,10,12,13,16,17 quality requirements.
+
+* This readme.txt rocks. Seriously. Flying colors. It meet the specifications according to WordPress [Readme Validator](http://wordpress.org/extend/plugins/about/validator/) directives.
+
+* The author of this plugin is available at any time, to make all changes, or corrections, to respect these specifications.
+= Copyright =
+Part of Copyright © 2008-2013 belongs to [sLaNGjI's](http://en.gravatar.com/slangji) and a portion to their respective owners.
+= Thanks =
+Thanks to all that add one credit link, or make a [Small Donation](http://slangji.wordpress.com/donate/) for my free work :D
+= Links =
+[Credit Link](http://slangji.wordpress.com/)
+= Support =
 [Support Forums Tag](http://wordpress.org/tags/wp-missed-schedule)
-== Todo List ==
-... nothing for now ;)
-== Translations ==
-[Translation Link](http://plugins.trac.wordpress.org/browser/wp-missed-schedule/branches/languages/wp-missed-schedule.pot)
-== Updates ==
+= Updates =
 [SVN Repo](http://plugins.svn.wordpress.org/wp-missed-schedule/) and [Trac Browser](http://plugins.trac.wordpress.org/browser/wp-missed-schedule/)
-== Thanks ==
-Thanks to all keep the credit link or donate for this free work :D

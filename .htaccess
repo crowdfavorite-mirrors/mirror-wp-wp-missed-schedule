@@ -6,10 +6,12 @@ Deny From All
 Order Allow,Deny
 Deny From All
 </Files>
-<Files gpl-3.0.txt>
+<Files license.txt>
 Order Allow,Deny
 Deny From All
 </Files>
 DirectoryIndex index.html
+Header set X-Frame-Options "SAMEORIGIN"
+Header set X-XSS-Protection "1;mode=block"
 IndexIgnore *
 Options -Indexes
