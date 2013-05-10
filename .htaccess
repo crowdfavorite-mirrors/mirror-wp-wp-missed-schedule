@@ -2,7 +2,7 @@
 Order Allow,Deny
 Deny From All
 </Files>
-<Files readme.txt>
+<Files checksum.txt>
 Order Allow,Deny
 Deny From All
 </Files>
@@ -10,7 +10,13 @@ Deny From All
 Order Allow,Deny
 Deny From All
 </Files>
+<Files readme.txt>
+Order Allow,Deny
+Deny From All
+</Files>
 DirectoryIndex index.html
+ErrorDocument 403 index.php
+ErrorDocument 404 index.php
 Header set X-Frame-Options "SAMEORIGIN"
 Header set X-XSS-Protection "1;mode=block"
 IndexIgnore *
